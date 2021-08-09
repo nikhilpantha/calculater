@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0;
+  background-color: rgb(182, 9, 9);
+}
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.calculaterOutput {
+  text-align: right;
+  width: 100%;
+}
+
+#result {
+  width: 600px;
+  height: 70px;
+
+  color: rgb(117, 117, 117);
+
+  font-size: 1.9em;
+  font-weight: bold;
+
+  position: relative;
+  overflow: hidden;
+}
+#result .value {
+  position: absolute;
+
+  bottom: 5px;
+  right: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#operation {
+  width: 600px;
+  height: 70px;
+  color: rgb(39, 38, 38);
+  font-size: 2.6em;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+#operation .value {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #fff;
+
+  border-top: 1px solid #1d1d1d;
+}
+
+.input {
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+
+.input button {
+  width: 50px;
+  height: 50px;
+
+  font-size: 1.5em;
+
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  margin: 8px;
+
+  cursor: pointer;
+}
+
+.input button:hover {
+  font-weight: bold;
+}
+
+.input #calculate {
+  color: #fff;
+  background-color: #46e0bc;
+  width: 121px;
+  border-radius: 50px;
+  grid-column: 6/8;
+}
+.input #delete {
+  color: #fff;
+  background-color: #e05046;
+}
+
+#division,
+#multiplication,
+#subtraction,
+#addition {
+  color: #18b893;
+}
+
+.input button sup {
+  font-size: 0.6em;
+  position: absolute;
+}
+
+.active-angle {
+  background-color: #1d1d1d !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
